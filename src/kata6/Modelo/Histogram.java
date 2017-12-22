@@ -5,8 +5,8 @@ import java.util.Map;
 import java.util.Set;
 
 public class Histogram <T> {
-    Map<T,Integer> map = new HashMap<>();
-    public Integer get(T key){
+    private final Map<T,Integer> map = new HashMap<>();
+    public Integer getKey(T key){
         return map.get(key);
     }
     public  Set<T> keySet(){
